@@ -1,0 +1,29 @@
+.Title{
+    text-align: center;
+}
+.Compra{
+    text-align: center;
+    width: 20.1em;
+    height: 2em;
+    font-size: 1.5em;
+    border: none;
+    margin: 0.3em;    
+}
+
+.botão_estado{
+    width: 10em;
+    height: 2em;
+    font-size: 1.5em;
+    border: none;
+    margin: 0.2em;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.wrapper{
+    background-color: black;
+    border-radius: 1em;
+    padding: 1.5em;
+}
