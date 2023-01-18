@@ -1,0 +1,30 @@
+li{
+    font-size: 1.5rem;
+    display: inline;
+    padding: 1em;
+}
+ul{
+    list-style-type: none;
+    color: black;
+}
+
+list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav{
+    text-align: center;
+    display: flex;
+    padding: 1em;
+    background-color: #36494E;
+    text-decoration: none
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}  
+      
+

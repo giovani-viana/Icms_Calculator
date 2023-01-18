@@ -12,10 +12,23 @@
 
 .botão_estado{
     width: 10em;
+    text-align: center;
     height: 2em;
     font-size: 1.5em;
     border: none;
-    margin: 0.2em;
+    margin: 0.1em;
+    display: inline;
+}
+
+button{
+    background-color: #597081;
+    border-radius: 80px;
+    width: 10em;
+    height: 2em;
+    font-size: 1.5em;
+    border: none;
+    margin: 0.1em;
+    display: inline;
 }
 
 button:hover{
@@ -26,4 +39,10 @@ button:hover{
     background-color: black;
     border-radius: 1em;
     padding: 1.5em;
+}
+
+.Resultado{
+    background-color: #597081;
+    color: white;
+    border-radius: 80px;
 }

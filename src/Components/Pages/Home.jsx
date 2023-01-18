@@ -1,6 +1,13 @@
 import React from 'react'
 
+import Calculadora from '../Calculadora.jsx';
+
 export function Home() {
-    return <h1>Home</h1>
-    }
+    return(
+        <section>
+            <Calculadora />
+        </section>
+    ) 
+}
+
     
