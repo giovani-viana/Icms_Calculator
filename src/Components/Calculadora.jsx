@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import './Styles/Calculadora.css'
+import '../Styles/Calculadora.css'
 import { Container } from '@mui/system'
 import { Box } from '@mui/material'
 

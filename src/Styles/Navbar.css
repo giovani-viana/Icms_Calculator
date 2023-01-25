@@ -6,6 +6,7 @@ li{
 ul{
     list-style-type: none;
     color: black;
+
 }
 
 list{
@@ -17,9 +18,10 @@ list{
 nav{
     text-align: center;
     display: flex;
-    padding: 1em;
+    padding: 1;
     background-color: #36494E;
-    text-decoration: none
+    text-decoration: none;
+    
 }
 
 a {
