@@ -6,46 +6,15 @@ import { Box } from '@mui/material'
 
 
 export default function Calculadora() {
-    const [price, setPrice] = useState('');
+    const [price, setPrice] = useState();
     const [estado_O, setEstado_O] = useState('DF');
     const [estado_D, setEstado_D] = useState('AM');
     const [Resultado, setResultado] = useState();
     
-    /*const handleSubmit = (e) => {
-        e.preventDefaut();
-        const ICMS = { price, estado_O, estado_D };
-
-        console.log(ICMS);
-    }*/
-    
-
     function resultHandler(e){ //Form 1 "Preço da Compra"
-        e.preventDefaut();
         var priceInput = e.target.value;
         setPrice(priceInput);
-    }
-
-    function Result(){
-        var valEstadoD, valEstadoO;
-
-        if (estado_D === 'DF') {
-            setEstado_D(valEstadoD = 0,15)
-        }
-
-        else if (estado_D === 'AM') {
-            setEstado_D(valEstadoD = 0,17)
-        }
-
-        if (estado_O === 'DF') {
-            setEstado_O(valEstadoO = 0,15)
-        }
-
-        else if (estado_O === 'AM') {
-            setEstado_O(valEstadoO = 0,17)
-        }
-
-        const aliquota = valEstadoD - valEstadoO;
-        setResultado(aliquota * price)
+        setResultado(price * 2);
     }
 
     return (
@@ -54,7 +23,7 @@ export default function Calculadora() {
             <Box m={10} />
             <Container maxWidth='sm'>
                 <div className='wrapper'>
-                    <form onSubmit={resultHandler}>
+                    <form>
                         <input className='Compra'
                             placeholder='Preço da Compra'
 
@@ -70,6 +39,12 @@ export default function Calculadora() {
                             <option value={'AC'}>AC</option> <option value={'AP'}>AP</option> <option value={'BA'}>BA</option>
                             <option value={'AL'}>AL</option> <option value={'AM'}>AM</option> <option value={'CE'}>CE</option>
                             <option value={'DF'}>DF</option> <option value={'ES'}>ES</option> <option value={'GO'}>GO</option>
+                            <option value={'MA'}>MA</option> <option value={'MT'}>MT</option> <option value={'MS'}>MS</option>
+                            <option value={'MG'}>MG</option> <option value={'PA'}>PA</option> <option value={'PB'}>PB</option>
+                            <option value={'PR'}>PR</option> <option value={'PE'}>PE</option> <option value={'PI'}>PI</option>
+                            <option value={'RJ'}>RJ</option> <option value={'RN'}>RN</option> <option value={'RS'}>RS</option>
+                            <option value={'RO'}>RO</option> <option value={'RR'}>RR</option> <option value={'SC'}>SC</option>
+                            <option value={'SP'}>SP</option> <option value={'SE'}>SE</option> <option value={'TO'}>TO</option>
                         </select>
 
                         <select className='botão_estado'
@@ -79,9 +54,15 @@ export default function Calculadora() {
                             <option value={'AC'}>AC</option> <option value={'AP'}>AP</option> <option value={'BA'}>BA</option>
                             <option value={'AL'}>AL</option> <option value={'AM'}>AM</option> <option value={'CE'}>CE</option>
                             <option value={'DF'}>DF</option> <option value={'ES'}>ES</option> <option value={'GO'}>GO</option>
+                            <option value={'MA'}>MA</option> <option value={'MT'}>MT</option> <option value={'MS'}>MS</option>
+                            <option value={'MG'}>MG</option> <option value={'PA'}>PA</option> <option value={'PB'}>PB</option>
+                            <option value={'PR'}>PR</option> <option value={'PE'}>PE</option> <option value={'PI'}>PI</option>
+                            <option value={'RJ'}>RJ</option> <option value={'RN'}>RN</option> <option value={'RS'}>RS</option>
+                            <option value={'RO'}>RO</option> <option value={'RR'}>RR</option> <option value={'SC'}>SC</option>
+                            <option value={'SP'}>SP</option> <option value={'SE'}>SE</option> <option value={'TO'}>TO</option>
                         </select>
 
-                        <button onClick={ Result }>Calcular</button>
+                        <button onClick={resultHandler}>Calcular</button>
                         <h1 className='Resultado'>{Resultado}</h1>
                     </form>
                 </div>
