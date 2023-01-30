@@ -1,0 +1,15 @@
+.footer{
+    background-color: #2A383C;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+li{
+    list-style: none;
+    display: inline;
+}

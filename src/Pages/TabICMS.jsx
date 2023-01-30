@@ -1,6 +1,9 @@
 import React from 'react'
+import tab from '../Imagens/Tab_2022.png'
 
-export function TabICMS() {
-    return <h1>Tabela ICMS</h1>
-    }
-    
+const TabICMS = () => {
+    return( <img src={tab} alt='Tab' />
+    );
+};
+
+export default TabICMS; 

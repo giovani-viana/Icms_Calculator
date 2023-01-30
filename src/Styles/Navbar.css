@@ -1,32 +1,19 @@
-li{
-    font-size: 1.5rem;
-    display: inline;
-    padding: 1em;
-}
-ul{
-    list-style-type: none;
-    color: black;
-
+.ImgLogo {
+    cursor: pointer;
+    width: 3.5em;
 }
 
-list{
-    display: flex;
+.navbar {
+    background-color: #2A383C;
+    padding: 25px 45px;
+}
+
+.list li, a, a:hover{
+    font-size: 25px;
     list-style: none;
-    align-items: center;
-}
-
-nav{
-    text-align: center;
-    display: flex;
-    padding: 1;
-    background-color: #36494E;
+    display: inline;
+    padding: 0px 10px;
+    color: white;
     text-decoration: none;
-    
 }
-
-a {
-    color:white;
-    text-decoration: none;
-}  
-      
 

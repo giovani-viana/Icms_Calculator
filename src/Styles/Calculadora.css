@@ -1,16 +1,29 @@
-.Title{
+:root {
+    --background: #A9CEF4;
+    --backCal: #7EA0B7;
+    --backRes: #597081;
+    --oldF: #36494E;
+}
+
+h1{
+    font-size: 3em;
+    margin: 20px;
+}
+
+.Title {
     text-align: center;
 }
-.Compra{
+
+.Compra {
     text-align: center;
     width: 20.1em;
     height: 2em;
     font-size: 1.5em;
     border: none;
-    margin: 0.3em;    
+    margin: 0.3em;
 }
 
-.botão_estado{
+.botão_estado {
     width: 10em;
     text-align: center;
     height: 2em;
@@ -20,7 +33,7 @@
     display: inline;
 }
 
-button{
+.bResultado {
     background-color: #597081;
     border-radius: 80px;
     width: 10em;
@@ -28,21 +41,22 @@ button{
     font-size: 1.5em;
     border: none;
     margin: 0.1em;
-    display: inline;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
-.wrapper{
-    background-color: black;
+.wrapper {
+    background-color: var(--backCal);
     border-radius: 1em;
     padding: 1.5em;
 }
 
-.Resultado{
-    background-color: #597081;
+.Resultado {
+    width: 10em;
+    font-size: 25px;
+    height: 1.5em;
+    background-color: var(--backRes);
     color: white;
-    border-radius: 80px;
 }
