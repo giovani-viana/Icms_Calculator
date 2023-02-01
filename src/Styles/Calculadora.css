@@ -15,22 +15,21 @@ h1{
 }
 
 .Compra {
+    margin: 0 auto;
     text-align: center;
     width: 20.1em;
     height: 2em;
     font-size: 1.5em;
     border: none;
-    margin: 0.3em;
+    display: block;
 }
 
 .botão_estado {
     width: 10em;
-    text-align: center;
     height: 2em;
     font-size: 1.5em;
     border: none;
-    margin: 0.1em;
-    display: inline;
+    margin: 10px 0.1em;
 }
 
 .bResultado {
@@ -51,6 +50,8 @@ button:hover {
     background-color: var(--backCal);
     border-radius: 1em;
     padding: 1.5em;
+
+    text-align: center;
 }
 
 .Resultado {
@@ -59,4 +60,7 @@ button:hover {
     height: 1.5em;
     background-color: var(--backRes);
     color: white;
+    margin: 10px;
+
+    justify-content: center;
 }

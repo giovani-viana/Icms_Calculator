@@ -1,11 +1,19 @@
 import React from 'react'
+import '../Styles/Sobre.css'
+
+import { Box, Container } from '@mui/system'
 
 const Sobre = () => {
     return (
-    <div>
-        <p>Olá! Primeiramente gostaria de agradecer por ter interesse neste projeto</p>
-        <p>Me chamo Giovani e este é meu projeto de uma matéria da faculdade</p>
-    </div>
+        <div>
+             <Box m={11}/>
+            <Container maxWidth='sm' className='wrap3'>
+                <p className='text2'>
+                    Olá! Primeiramente gostaria de agradecer por ter interesse neste projeto<br></br>
+                    Me chamo Giovani e este é meu projeto de uma matéria Projeto Transversal de Redes
+                </p>
+            </Container>
+        </div>
     );
 };
 export default Sobre    

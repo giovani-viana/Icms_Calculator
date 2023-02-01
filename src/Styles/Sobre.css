@@ -1,0 +1,18 @@
+:root{
+    --backCal: #7EA0B7;
+    --backRes: #597081;
+}
+
+.text2{
+    font-size: 2em;
+    padding: 1em;
+}
+
+.wrap3{
+    background-color: var(--backCal);
+    display: flex;
+    text-align: center;
+
+    border-radius: 80px;
+}
+
